@@ -1,0 +1,131 @@
+:root{
+    --main-padding:0 0 100px 0;
+    --main-color:#19c8fa;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    max-width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+@media (min-width:1400px){
+    .container{
+        max-width: 1500px;
+    }
+}
+/* start special shape */
+.special_shape{
+    font-weight: normal;
+    font-size: 40px;
+    position: relative;
+    margin-bottom: 70px;
+    text-align: center;
+    /* text-transform: uppercase; */
+}
+.special_shape::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 120px;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.special_shape::after{
+    content: "";
+    position: absolute;
+    border: 2px solid black;
+    border-radius:50%;
+    width: 14px;
+    height: 14px;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+}
+.special_shape + p{
+    text-align: center;
+    width: 550px;
+    margin: 0 auto 100px;
+    max-width: 100%;
+    line-height: 2;
+    color: #777;
+}
+@media (max-width:576px){
+    .special_shape{
+        font-size:30px;
+    }
+    .special_shape + p{
+        font-size: 14px;
+    }
+}
+/* end special shape */
+
+/* start services */
+.services{
+    padding: var(--main-padding);
+}
+.servicesContent{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-column-gap: 40px;
+    grid-row-gap: 60px;
+}
+.servicesContent .srvBox{
+    display: flex;
+}
+.servicesContent .srvBox i{
+    font-size: 3em;
+    margin-right: 50px;
+}
+.servicesContent .srvBox h3{
+    margin: 0 0 30px;
+    color:var(--main-color);
+}
+.servicesContent .srvBox p{
+    line-height: 2;
+    color: #777;
+}
+@media (min-width:1400px){
+    .servicesContent{
+        grid-template-columns: repeat(2, minmax(350px, 1fr));
+    }
+}
+@media (max-width:576px){
+    .servicesContent{
+        grid-template-columns: auto;
+    }
+    .servicesContent .srvBox{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .servicesContent .srvBox i{
+        margin: 0 0 30px;
+    }
+
+}
+/* end services */
+/* start protfolio */
+.protfolio{
+    padding: var(--main-padding);
+}
+.protfolio ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.protfolio ul li{
+    padding:10px;
+}
+.protfolio .active{
+    background-color: var(--main-color);
+    color:white;
+}
