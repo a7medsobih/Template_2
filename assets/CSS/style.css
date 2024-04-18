@@ -124,8 +124,10 @@ body{
 }
 .protfolio ul li{
     padding:10px;
+    cursor: pointer;
 }
-.protfolio .active{
+.protfolio li.active{
     background-color: var(--main-color);
     color:white;
 }
+/* end protfolio */
