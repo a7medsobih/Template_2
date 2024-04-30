@@ -64,6 +64,7 @@ body {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
 }
+
 .header ul li a.spatialActive {
     color: #007887;
     border-bottom: 1px solid #007887;
@@ -208,6 +209,7 @@ i.active {
     .landing .text {
         width: 100%;
     }
+
     .bullets i {
         font-size: 15px;
     }
