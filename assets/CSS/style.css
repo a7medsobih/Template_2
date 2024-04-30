@@ -140,6 +140,7 @@ nav .toggle-menu {
     transform: translateY(-50%);
     z-index: 2;
     cursor: pointer;
+    font-size: 30px;
     transition: font-size 0.3s;
 }
 
@@ -212,6 +213,22 @@ i.active {
 
     .bullets i {
         font-size: 15px;
+    }
+
+    .sign {
+        font-size: 25px;
+    }
+
+    .sign:hover {
+        font-size: 35px;
+    }
+
+    .fa-chevron-left {
+        left: 15px;
+    }
+
+    .fa-chevron-right {
+        right: 15px;
     }
 }
 
